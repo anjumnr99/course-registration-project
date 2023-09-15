@@ -1,6 +1,9 @@
 
-const Card = ({card}) => {
+const Card = ({card,handleSelect}) => {
     const {title,cover_img,details,price,credit_hour} = card;
+
+    
+    
     
     return (
         <div>
@@ -24,7 +27,7 @@ const Card = ({card}) => {
                         </div>
                     </div>
                     <div className="card-actions">
-                        <button className="btn bg-[#2F80ED] text-white normal-case text-lg font-semibold w-full">Select</button>
+                        <button onClick={()=>handleSelect(card)} className="btn bg-[#2F80ED] text-white normal-case text-lg font-semibold w-full">Select</button>
                     </div>
                 </div>
             </div>

@@ -10,8 +10,9 @@ function App() {
   return (
     <>
       <h1 className='text-4xl font-semibold'>Course Registration</h1>
+      <Cards></Cards>
 
-      <div className=' w-full flex gap-6 mt-8'>
+      {/* <div className=' w-full flex gap-6 mt-8'>
         <div className='w-3/4 '>
           <Cards ></Cards>
         </div>
@@ -33,7 +34,7 @@ function App() {
           <p className='text-lg font-semibold mb-6 text-[#1c1b1bcc]'>Total price : </p>
         </div>
         
-      </div>
+      </div> */}
 
     </>
   )
