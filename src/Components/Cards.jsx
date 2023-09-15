@@ -1,4 +1,7 @@
 
+import swal from 'sweetalert';
+ 
+
 
 import { useState } from 'react'
 import { useEffect } from 'react';
@@ -28,7 +31,8 @@ const Cards = () => {
         let totalPrice = card.price;
         let totalCredit = card.credit_hour;
         if (isExist) {
-            return alert("you have already selected this course");
+            return (swal('', "you have already selected this course", "error"));
+            // return alert("you have already selected this course");
         } else {
 
             selectedCard.forEach((item) => {
@@ -39,7 +43,7 @@ const Cards = () => {
             const remainingCredit = 20 - totalCredit;
 
             if (totalCredit > 20 || remainingCredit < 0) {
-                alert('Cannot add any courses')
+                 swal("Sorry! You can't add any course", "Your total remaining credit hour is less", "error");
             } else {
                 setCredit(totalCredit);
                 setPrice(totalPrice);
