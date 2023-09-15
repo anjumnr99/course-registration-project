@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import { useEffect } from 'react';
 import Card from './Card';
-import { list } from 'postcss';
+
 
 
 const Cards = () => {
 
     const [allCards, setAllCards] = useState([]);
     const [selectedCard, setSelectedCard] = useState([]);
+    const [price, setPrice] = useState(0);
+    const [credit,setCredit] = useState(0);
+    const [remaining,setRemaining] = useState(20);
 
     useEffect(() => {
         fetch('./data.json')
@@ -16,14 +19,29 @@ const Cards = () => {
 
     }, [])
 
+   
+
     const handleSelect = (card) => {
         const isExist = selectedCard.find((item)=>item.id === card.id);
-        
+        let totalPrice = card.price;
+        let totalCredit = card.credit_hour;
         if(isExist){
            return alert('You already select this course');
         }else{
+            
+            selectedCard.forEach((item)=> {
+                totalPrice=totalPrice+item.price;
+                totalCredit=totalCredit+item.credit_hour;
+            });
+            setCredit(totalCredit);
+             setPrice(totalPrice);
+             
+             const remainingCredit = 20 - totalCredit;
+             setRemaining(remainingCredit);
             const allSelectedCard = [...selectedCard, card];
             setSelectedCard(allSelectedCard);
+            
+           
         }
         
     };
@@ -45,7 +63,7 @@ const Cards = () => {
             </div>
 
             <div className='w-1/4  h-fit card px-4 bg-base-100 shadow-xl text-start'>
-                <h3 className='text-lg font-bold text-[#2F80ED] mt-6'>Credit Hour Remaining 20 hr</h3>
+                <h3 className='text-lg font-bold text-[#2F80ED] mt-6'>Credit Hour Remaining {remaining} hr</h3>
                 <hr className='my-4 ' />
                 <h3 className='text-xl font-bold mb-5'>Course Name</h3>
                 <ol className='text-[#1c1b1b99] list-decimal px-4 '>
@@ -56,11 +74,11 @@ const Cards = () => {
 
                 <hr className='my-4 ' />
 
-                <p className='text-base font-medium text-[#1c1b1bcc]'>Total credit hour: </p>
+                <p className='text-base font-medium text-[#1c1b1bcc]'>Total credit hour: {credit}</p>
 
                 <hr className='my-4 ' />
 
-                <p className='text-lg font-semibold mb-6 text-[#1c1b1bcc]'>Total price : </p>
+                <p className='text-lg font-semibold mb-6 text-[#1c1b1bcc]'>Total price : {price} USD</p>
             </div>
 
         </div>
