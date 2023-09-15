@@ -10,5 +10,5 @@
   - Selected course will show below the title 'course name' 
 
 - Discuss how you managed the state in your assignment project.
-    Ans: In my project I use five state. I use the useState function for storing the data which are fetching form json file, storing all selected course details , to initialize and set the total price, initializing and set the total credit hour and set and to initialize the remaining credit hour.
+    - Ans: In my project I use five state. I use the useState function for storing the data which are fetching form json file, storing all selected course details , to initialize and set the total price, initializing and set the total credit hour and set and to initialize the remaining credit hour.
    
