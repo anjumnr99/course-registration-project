@@ -33,15 +33,22 @@ const Cards = () => {
                 totalPrice=totalPrice+item.price;
                 totalCredit=totalCredit+item.credit_hour;
             });
-            setCredit(totalCredit);
-             setPrice(totalPrice);
+
+            const remainingCredit = 20 - totalCredit;
+
+            if(totalCredit>20 || remainingCredit < 0){
+                alert('Cannot add any courses')
+            }else{
+                setCredit(totalCredit);
+              setPrice(totalPrice);
              
-             const remainingCredit = 20 - totalCredit;
+             
              setRemaining(remainingCredit);
             const allSelectedCard = [...selectedCard, card];
             setSelectedCard(allSelectedCard);
+            }
             
-           
+            
         }
         
     };
