@@ -1,8 +1,14 @@
-# React + Vite
+# Question and Ans
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+- Add at least 3 Project features.
+  Ans: Here are some features of my project:
+  - Users can add only one course.
+  - Total credit hour can not be greater than 20. If it's there will show a warning message.  
+  - If remaining credit hour 0 or less than 0 user cannot add any other courses.
+  - Total price will be count corresponding to selected course.
+  - Selected course will show below the title 'course name' 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Discuss how you managed the state in your assignment project.
+    Ans: In my project I use five state. I use the useState function for storing the data which are fetching form json file, storing all selected course details , to initialize and set the total price, initializing and set the total credit hour and set and to initialize the remaining credit hour.
+   

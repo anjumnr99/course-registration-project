@@ -1,10 +1,8 @@
+import PropTypes from "prop-types";
 
 const Card = ({card,handleSelect}) => {
     const {title,cover_img,details,price,credit_hour} = card;
 
-    
-    
-    
     return (
         <div>
             <div className="card  bg-base-100 h-[402px] shadow-xl md:max-w-sm lg:max-w-sm ">
@@ -35,4 +33,8 @@ const Card = ({card,handleSelect}) => {
     );
 };
 
+Card.propTypes = {
+    card : PropTypes.object.isRequired,
+    handleSelect : PropTypes.func.isRequired
+}
 export default Card;

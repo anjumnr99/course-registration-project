@@ -1,3 +1,5 @@
+
+
 import { useState } from 'react'
 import { useEffect } from 'react';
 import Card from './Card';
@@ -9,8 +11,9 @@ const Cards = () => {
     const [allCards, setAllCards] = useState([]);
     const [selectedCard, setSelectedCard] = useState([]);
     const [price, setPrice] = useState(0);
-    const [credit,setCredit] = useState(0);
-    const [remaining,setRemaining] = useState(20);
+    const [credit, setCredit] = useState(0);
+    const [remaining, setRemaining] = useState(20);
+
 
     useEffect(() => {
         fetch('./data.json')
@@ -20,42 +23,42 @@ const Cards = () => {
     }, [])
 
    
-
     const handleSelect = (card) => {
-        const isExist = selectedCard.find((item)=>item.id === card.id);
+        const isExist = selectedCard.find((item) => item.id === card.id);
         let totalPrice = card.price;
         let totalCredit = card.credit_hour;
-        if(isExist){
-           return alert('You already select this course');
-        }else{
-            
-            selectedCard.forEach((item)=> {
-                totalPrice=totalPrice+item.price;
-                totalCredit=totalCredit+item.credit_hour;
+        if (isExist) {
+            return alert("you have already selected this course");
+        } else {
+
+            selectedCard.forEach((item) => {
+                totalPrice = totalPrice + item.price;
+                totalCredit = totalCredit + item.credit_hour;
             });
 
             const remainingCredit = 20 - totalCredit;
 
-            if(totalCredit>20 || remainingCredit < 0){
+            if (totalCredit > 20 || remainingCredit < 0) {
                 alert('Cannot add any courses')
-            }else{
+            } else {
                 setCredit(totalCredit);
-              setPrice(totalPrice);
-             
-             
-             setRemaining(remainingCredit);
-            const allSelectedCard = [...selectedCard, card];
-            setSelectedCard(allSelectedCard);
+                setPrice(totalPrice);
+
+
+                setRemaining(remainingCredit);
+                const allSelectedCard = [...selectedCard, card];
+                setSelectedCard(allSelectedCard);
             }
-            
-            
+
+
         }
-        
+
     };
 
 
-
+    
     return (
+
 
         <div className=' w-full flex gap-6 mt-8'>
             <div className='w-3/4 '>
@@ -68,15 +71,16 @@ const Cards = () => {
                 </div>
 
             </div>
+           
 
             <div className='w-1/4  h-fit card px-4 bg-base-100 shadow-xl text-start'>
                 <h3 className='text-lg font-bold text-[#2F80ED] mt-6'>Credit Hour Remaining {remaining} hr</h3>
                 <hr className='my-4 ' />
                 <h3 className='text-xl font-bold mb-5'>Course Name</h3>
                 <ol className='text-[#1c1b1b99] list-decimal px-4 '>
-                  {
-                    selectedCard.map((item,idx) => (<li key={idx}>{item.title}</li>))
-                  }
+                    {
+                        selectedCard.map((item, idx) => (<li key={idx}>{item.title}</li>))
+                    }
                 </ol>
 
                 <hr className='my-4 ' />
@@ -87,6 +91,7 @@ const Cards = () => {
 
                 <p className='text-lg font-semibold mb-6 text-[#1c1b1bcc]'>Total price : {price} USD</p>
             </div>
+
 
         </div>
 
@@ -103,3 +108,6 @@ const Cards = () => {
 };
 
 export default Cards;
+
+
+
