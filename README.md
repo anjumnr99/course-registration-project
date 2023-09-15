@@ -2,7 +2,7 @@
 
 
 - Add at least 3 Project features.
-  Ans: Here are some features of my project:
+ - Ans: Here are some features of my project:
   - Users can add only one course.
   - Total credit hour can not be greater than 20. If it's there will show a warning message.  
   - If remaining credit hour 0 or less than 0 user cannot add any other courses.
