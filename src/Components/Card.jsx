@@ -12,7 +12,7 @@ const Card = ({card,handleSelect}) => {
                 {/* <img className="w-full h-2/5 rounded-2xl overflow-hidden p-4" src={cover_img} alt="" /> */}
                 <div className="px-4 pb-4 h-3/5	">
                     <h2 className="text-start text-lg whitespace-normal font-semibold mb-3">{title}</h2>
-                    <p className='text-start text-sm font-normal text-[#1c1b1b99] mb-5'>{details}</p>
+                    <p className='text-start text-sm font-normal text-[#1c1b1b99] mb-3'>{details.slice(0,130)}</p>
 
                     <div className='flex justify-between mb-6'>
                         <div className='flex'>

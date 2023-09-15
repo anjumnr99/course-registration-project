@@ -3,7 +3,7 @@
         "id" : 1,
       "cover_img": "https://i.ibb.co/j66xhS0/Rectangle-2-2.png",
       "title": "Introduction to C Programming",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "C is a high-level programming language known for its efficiency and versatility.It was developed in the 1970s and is widely used for system programming, embedded systems, and application development.C is known for its low-level memory manipulation capabilities and is often used in developing operating systems and device drivers.",
       "price": 15000,
       "credit_hour": 1
      
@@ -12,7 +12,7 @@
         "id" : 2,
       "cover_img": "https://i.ibb.co/MMjVPr1/Rectangle-2-3.png",
       "title": "Introduction to Algorithms",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "An algorithm is a step-by-step procedure or set of instructions for solving a specific problem or performing a task.Algorithms are fundamental to computer science and programming, as they define how tasks are executed efficiently.Good algorithms are designed to optimize time and space complexity for various computational problems.",
       "price": 25000,
       "credit_hour": 2
       
@@ -21,7 +21,7 @@
         "id" : 3,
       "cover_img": "https://i.ibb.co/K27SVZk/Rectangle-2-4.png",
       "title": "Introduction to C++ for DSA",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "C++ is an extension of the C programming language with added features like object-oriented programming (OOP).It is commonly used for developing software applications, games, and system software.C++ combines the power of low-level programming with the abstraction of OOP, making it suitable for a wide range of applications.",
       "price": 10000,
       "credit_hour": 10
       
@@ -30,7 +30,7 @@
         "id" : 4,
       "cover_img": "https://i.ibb.co/Sskntxy/Rectangle-3.png",
       "title": "Basic Data Structures",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "Data structures are fundamental components for organizing and storing data efficiently. Basic data structures include arrays, linked lists, stacks, queues, and trees. Choosing the right data structure is crucial for solving specific problems effectively in programming",
       "price": 35000,
       "credit_hour": 5
       
@@ -39,7 +39,7 @@
         "id" : 5,
       "cover_img": "https://i.ibb.co/RzbZ9gV/Rectangle-2.png",
       "title": "Introduction to OOP Python",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "Python is a high-level, interpreted programming language known for its simplicity and readability.It is widely used for web development, data analysis, machine learning, and automation.Python's extensive libraries and frameworks make it a versatile choice for various applications.",
       "price": 19000,
       "credit_hour": 5
       
@@ -48,7 +48,7 @@
         "id" : 6,
       "cover_img": "https://i.ibb.co/Lrp6dfR/Rectangle-2-5.png",
       "title": "Software Engineering",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "Software engineering is a discipline that involves designing, developing, testing, and maintaining software systems.It focuses on creating reliable, scalable, and maintainable software through systematic processes and best practices.",
       "price": 23000,
       "credit_hour": 2
       
@@ -57,7 +57,7 @@
         "id" : 7,
       "cover_img": "https://i.ibb.co/1fsK7kF/Rectangle-3-1.png",
       "title": "AWS, Cloud Computing",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "AWS is a leading cloud computing platform offered by Amazon. It provides a wide range of cloud services, including computing power, storage, databases, machine learning, and more. AWS enables businesses to scale their infrastructure and deploy applications in a cost-effective and flexible manner",
       "price": 35000,
       "credit_hour": 5
       
@@ -66,7 +66,7 @@
         "id" : 8,
       "cover_img": "https://i.ibb.co/Z2Zk6yH/Rectangle-2-1.png",
       "title": "Database (MySQL)",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "MySQL is a popular open-source relational database management system (RDBMS).It is used for storing, managing, and retrieving structured data in various applications, from websites to enterprise systems.MySQL uses SQL (Structured Query Language) for database operations",
       "price": 19000,
       "credit_hour": 5
       
@@ -75,10 +75,11 @@
         "id" : 9,
       "cover_img": " https://i.ibb.co/sCvNxyQ/Rectangle-2-6.png",
       "title": "Problem-Solving Part",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "Problem-solving is a critical skill in programming and many other fields. It involves breaking down complex problems into manageable steps and finding effective solutions. Problem-solving often requires creativity, logical thinking, and a systematic approach to arrive at optimal solutions. ",
       "price": 23000,
       "credit_hour": 2
       
     }
   ]
+  
   
