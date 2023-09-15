@@ -43,7 +43,7 @@ const Cards = () => {
             const remainingCredit = 20 - totalCredit;
 
             if (totalCredit > 20 || remainingCredit < 0) {
-                 swal("Sorry! You can't add any course", "Your total remaining credit hour is less", "error");
+                 swal("Sorry! You can't add any course", "Your total remaining credit hour is low", "error");
             } else {
                 setCredit(totalCredit);
                 setPrice(totalPrice);
